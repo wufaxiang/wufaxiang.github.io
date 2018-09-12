@@ -1,5 +1,5 @@
-# Person Website Homepage
+## Homepage
 
-This is my website homepage deployed at [link](https://www.faxiang.site/). 
+This is my website homepage deployed at [https://www.faxiang.site/](https://www.faxiang.site/). 
 
 Welcome to visit !
