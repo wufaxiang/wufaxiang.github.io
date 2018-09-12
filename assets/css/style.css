@@ -1,0 +1,771 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Creativepersonal
+Template Name: Mike - Personal Portfolio Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CCS STYLE
+* 03.HOMEPAGE CSS STYLE
+    -LOGO CSS
+    -MENU CSS
+* 04.ABOUT CSS STYLE
+* 05.SERVICE CSS STYLE
+* 06.WORK CSS STYLE
+* 07.TESTIMONIAL CSS STYLE
+* 08.QUOTE CSS STYLE
+* 09.CONTACT CSS STYLE
+* 10.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #232323;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    line-height: 32px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0
+}
+
+.section-padding {
+    padding: 70px 0px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    margin-top: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+
+.section-title p {
+    font-weight: 300;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.PRELOADER & BOUNCE CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.preloader {
+    background: #131212;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.status-mes {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -22px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 3px solid rgba(255, 255, 255, 0.08);
+    border-right: 3px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-area {
+    height: 100%;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.welcome-image-area {
+    position: relative;
+    height: 100%;
+    background: url(../images/bg/bg.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.welcome-image-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .2);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text h2 {
+    color: #fafafa;
+    font-size: 80px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.header-text h3 {
+    color: #ddd;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.header-text h3 strong {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.header-text h5 {
+    margin-left: 20%;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.header-top-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.logo {
+    padding-top: 28px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.logo a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.menu-bg .logo a {
+    color: #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.toggle-btn {
+    background-color: #000;
+    border: 0 none;
+    padding: 10px;
+    outline: none;
+}
+
+.toggle-btn .icon-bar {
+    background-color: #fafafa;
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 22px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.toggle-btn.active .icon-bar:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+
+.toggle-btn.active .icon-bar:nth-child(1) {
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.toggle-btn.active .icon-bar:nth-child(3) {
+    top: -5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.toggle-btn .icon-bar:last-child {
+    margin-bottom: 0;
+}
+
+.nav-toggle+.navbar-collapse {
+    margin-right: 43px;
+}
+
+.site-header .navbar-collapse {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.site-header.active .navbar-collapse {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+
+.mainmenu {
+    margin-top: 18px;
+}
+
+.mainmenu .navbar-nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 300;
+}
+
+ul.navbar-nav {
+    background: #000;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+
+.mainmenu .navbar-nav li a:hover {
+    background: none;
+    color: #ccc;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.nav li a:focus,
+.nav li a:hover {
+    background: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.social-link-area {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 999;
+    text-align: right;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
+
+.social-link-area ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-link-area ul li {
+    display: inline-block;
+    margin: 0px 22px;
+}
+
+.social-link-area ul li a {
+	color: #fff;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#about .container-fluid {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.about-image {}
+
+.about-text {
+    background: #131212;
+    padding: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -100px;
+    margin-top: 30px;
+}
+
+.about-text h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+    color: #fff;
+}
+
+.about-text p {
+    font-weight: 300;
+    line-height: 40px;
+    color: #ddd;
+    font-weight: normal;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-area {
+    background: #131212;
+}
+
+.single-service {
+    padding-right: 20px;
+}
+
+.service-icon i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.single-service h2 {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 20px 0px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #fafafa;
+    font-weight: 300;
+}
+
+.single-service p {
+    color: #ddd;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.single-service ul.service-details {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.single-service ul li {
+    display: block;
+    padding-bottom: 10px;
+    color: #a6a6a6;
+}
+.single-service ul li:last-child {
+    padding-bottom: 0px;
+}
+
+.single-service ul.service-details i {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.WORK CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.work {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.project-item {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.project-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+}
+
+.project-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.project-item img {
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    width: 100%;
+}
+
+.project-item:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.project-overlay h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.TESTIMONIAL CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.testimonial-area {
+    background: #131212;
+}
+
+.testimonial-list {
+    color: #fff;
+}
+
+.single-testimonial h2 {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 20px 0px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #fafafa;
+    font-weight: 300;
+}
+
+.single-testimonial h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.single-testimonial p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin: 5px 7px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.QUOTE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.quotes-area {
+    position: relative;
+    background: url(../images/bg/bg.jpg);
+    background-size: cover;
+    z-index: 1;
+    padding: 150px 0px;
+    background-attachment: fixed;
+}
+
+.quotes-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.quotes-text h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.quotes-text {
+    color: #fff;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-me-area {}
+
+.contact-form {
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #F7F7F7;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 25px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    color: #fff;
+    background: none;
+    padding: 15px 25px;
+    border: 1px solid #333;
+    font-size: 14px;
+    border-radius: 0px;
+    font-weight: 300;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: #000;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+
+.contact-form input[type='submit']:hover {
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.success {
+    background: #50B948 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.single-contact-details {
+    background: #131212;
+    text-align: center;
+    padding: 50px;
+}
+
+.single-contact-details h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+    color: #fff;
+}
+
+.single-contact-details p {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer-area {
+    background: #0C0B0B;
+    padding: 70px 0px;
+}
+
+.footer-area p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
